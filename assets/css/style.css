@@ -37,10 +37,10 @@
 
     /* transition */
     --transition-1: 0.15 ease;
-    --transition-1: 0.25 ease-in ;
+    --transition-2: 0.25 ease-in ;
 
     /* spacing */
-    --section-padding: 100px
+    --section-padding: 100px;
 }
 
 *{
@@ -72,3 +72,47 @@ body{
 body.active{
     overflow: hidden;
 }
+
+.container {
+    padding: 15px;
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    transition: var(--transition-2);
+    z-index: 2;
+}
+
+.header:active {
+    background-color: var(--eerie-black);
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-actions {
+    display: none;
+}
+
+.btn-mobile ion-icon {
+    color: var(--white);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+button {
+    background: transparent;
+    border: none;
+
+}
+
