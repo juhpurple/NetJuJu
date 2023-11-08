@@ -18,7 +18,7 @@
     --black: hsl(0, 0%, 0%);
     --jet: hsl(0, 0%, 20%);
     /* font */
-    --ff-poppins: 'poppins', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
 
     --fs-1: 36px;
     --fs-2: 32px;
@@ -33,7 +33,7 @@
     --fs-11: 12px;
     --fs-12: 11px;
     --fw-500: 500;
-    --fs-700: 700;
+    --fw-700: 700;
 
     /* transition */
     --transition-1: 0.15 ease;
@@ -41,6 +41,25 @@
 
     /* spacing */
     --section-padding: 100px;
+}
+
+.h1,
+.h2,
+.h3{
+    color: var(--white);
+    line-height: 40px;
+}
+
+.h1{
+    font-size: var(--fs-1);
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-6);
 }
 
 *{
@@ -183,4 +202,35 @@ button {
 }
 .overlay.active{
     pointer-events: all;
+}
+
+/* banner */
+
+.hero{
+    background: url('../img/banner.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:  var(--section-padding);
+}
+
+.hero-contant{
+    margin-top: 60px;
+}
+
+.hero-subtitle{
+    color: var(--citrine);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.hero-title{
+    margin-bottom: 30px;
+}
+
+.hero-title > strong{
+    color: var(--citrine);
 }
